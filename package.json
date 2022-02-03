@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.14",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.35",
     "@vueuse/core": "^7.5.5",
     "ityped": "^1.0.3",
     "postcss-windicss": "^1.0.0",

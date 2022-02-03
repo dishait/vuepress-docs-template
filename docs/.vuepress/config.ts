@@ -35,6 +35,21 @@ export default defineUserConfig({
 		]
 	},
 	theme: resolve(__dirname, './theme/index.ts'),
+	alias: {
+		'@use': resolve(__dirname, '../../composables'),
+		'@components': resolve(__dirname, '../../components')
+	},
+	plugins: [
+		[
+			'@vuepress/register-components',
+			{
+				componentsDir: resolve(
+					__dirname,
+					'../../components'
+				)
+			}
+		]
+	],
 	bundlerConfig: {
 		viteOptions: {
 			plugins: [
