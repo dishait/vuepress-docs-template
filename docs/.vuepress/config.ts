@@ -1,12 +1,12 @@
 import { resolve } from 'path'
 import { defineUserConfig } from 'vuepress'
-import postcssWindicss from 'postcss-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import {
 	NaiveUiResolver,
 	VueUseComponentsResolver
 } from 'unplugin-vue-components/resolvers'
+import WindiCSS from 'vite-plugin-windicss'
 
 export default defineUserConfig({
 	lang: 'zh-CN',
@@ -38,8 +38,21 @@ export default defineUserConfig({
 	bundlerConfig: {
 		viteOptions: {
 			plugins: [
+				WindiCSS({
+					scan: {
+						dirs: ['../', '../../components'],
+						fileExtensions: [
+							'md',
+							'js',
+							'ts',
+							'vue',
+							'jsx',
+							'tsx'
+						]
+					}
+				}),
 				Components({
-					dirs: resolve(__dirname, '../../components'),
+					dirs: '',
 					dts: resolve(
 						__dirname,
 						'./types/components.d.ts'
@@ -58,12 +71,7 @@ export default defineUserConfig({
 					),
 					imports: ['vue', 'vue-router', '@vueuse/core']
 				})
-			],
-			css: {
-				postcss: {
-					plugins: [postcssWindicss]
-				}
-			}
+			]
 		}
 	}
 })

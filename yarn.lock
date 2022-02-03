@@ -438,6 +438,28 @@
   dependencies:
     vue-demi "*"
 
+"@windicss/config@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.npmjs.org/@windicss/config/-/config-1.6.3.tgz#eff67eecc763d0080995068608d483799413bc82"
+  integrity sha512-1kjdy4tyYLD4sCB4DS+3Lt1Odnde03z4Rz3EUqyWJ7SiBEWMgRk1L797SsgEH4+W1DjLBZLs1SVYzaTO/3UdJA==
+  dependencies:
+    debug "^4.3.3"
+    jiti "^1.12.9"
+    windicss "^3.4.3"
+
+"@windicss/plugin-utils@1.6.3":
+  version "1.6.3"
+  resolved "https://registry.npmjs.org/@windicss/plugin-utils/-/plugin-utils-1.6.3.tgz#b321804b4e84e7a20a5c79f50c7fd83eb8202917"
+  integrity sha512-tY20pAdV8YOlCj/5Teh078n/YbekbE5qOmlNgcl+S10KqitUGB9+Qss/xE0HULACmCXBO9XeLUcAPGao79lAnA==
+  dependencies:
+    "@antfu/utils" "^0.4.0"
+    "@windicss/config" "1.6.3"
+    debug "^4.3.3"
+    fast-glob "^3.2.11"
+    magic-string "^0.25.7"
+    micromatch "^4.0.4"
+    windicss "^3.4.3"
+
 "@windicss/plugin-utils@^0.16.0":
   version "0.16.7"
   resolved "https://registry.npmjs.org/@windicss/plugin-utils/-/plugin-utils-0.16.7.tgz#54cd31841515e849f116a6d89e625da368f7de23"
@@ -1036,7 +1058,7 @@ ityped@^1.0.3:
   resolved "https://registry.npmjs.org/ityped/-/ityped-1.0.3.tgz#78430ab45e4836f4e565ecbacd221e58d46b44b3"
   integrity sha512-46Qnh3qs+6EJlWDHmvWRW6qiz5jFy2mkh9UvtTvQmLJMZIjKrdz4du68le7hLX4tAWCp6QTKiq/OuLv6huHxZg==
 
-jiti@^1.9.2:
+jiti@^1.12.9, jiti@^1.9.2:
   version "1.12.15"
   resolved "https://registry.npmjs.org/jiti/-/jiti-1.12.15.tgz#8f6a141c06524ab32e05d5e3c9b33eeda54ae775"
   integrity sha512-/+K89y6KJA2nISbWrlc/773XdpDgSQq/LdQ+ZZyw2jRxUNyquPtbsDCCCMRzzNORUgroUGc4nAXxJEnQvpViCA==
@@ -1067,6 +1089,11 @@ klona@^2.0.4:
   version "2.0.5"
   resolved "https://registry.npmjs.org/klona/-/klona-2.0.5.tgz#d166574d90076395d9963aa7a928fabb8d76afbc"
   integrity sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==
+
+kolorist@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/kolorist/-/kolorist-1.5.1.tgz#c3d66dc4fabde4f6b7faa6efda84c00491f9e52b"
+  integrity sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==
 
 linkify-it@^3.0.1:
   version "3.0.3"
@@ -1528,6 +1555,16 @@ util-deprecate@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+vite-plugin-windicss@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.npmjs.org/vite-plugin-windicss/-/vite-plugin-windicss-1.6.3.tgz#64afa460eaff610a376e320c450ec79d0b6f6330"
+  integrity sha512-D4fEUcAPoLRLdDZMee8NrHZHmn0Qj7AjSg1xNGBnZsMTwRPj93NKZk0fIIUoiKTEh1KrdQejW8g6cg0SgGKTww==
+  dependencies:
+    "@windicss/plugin-utils" "1.6.3"
+    debug "^4.3.3"
+    kolorist "^1.5.1"
+    windicss "^3.4.3"
 
 vite@^2.7.13:
   version "2.7.13"
