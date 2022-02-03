@@ -1,0 +1,22 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "description",
+  "author": {
+    "name": "name",
+    "email": "xxx@qq.com",
+    "url": "https://github.com/name"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "dev:open": "vuepress dev docs --open"
+  },
+  "devDependencies": {
+    "@vueuse/core": "^7.5.5",
+    "ityped": "^1.0.3",
+    "vuepress": "^2.0.0-beta.35"
+  }
+}
