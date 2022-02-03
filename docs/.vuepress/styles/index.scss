@@ -1,8 +1,6 @@
 @windicss;
 
 
-
-
 // 解决与 windicss 的冲突
 .logo {
     display: inline-block;
@@ -13,8 +11,9 @@ body {
     min-height: 110vh;
 }
 
+// 进度条颜色
 #nprogress {
-    --nprogress-color: #0288d1; // 进度条颜色
+    --nprogress-color: #0288d1;
 }
 
 /*
@@ -43,4 +42,37 @@ html.dark ::-webkit-scrollbar-track {
 
 html.dark ::-webkit-scrollbar-thumb {
     background-color: #343a40;
+}
+
+
+.back-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.4rem !important;
+    width: 2.4rem !important;
+    border-radius: 100%;
+    mask: none !important;
+    -webkit-mask: none !important;
+    background-color: white !important;
+    --tw-shadow-color: 8, 145, 178;
+    --tw-shadow: 0 4px 6px -1px rgba(var(--tw-shadow-color), 0.1),
+        0 2px 4px -1px rgba(var(--tw-shadow-color), 0.06);
+    box-shadow: 0 0 #0000,
+        0 0 #0000,
+        0 0 #0000,
+        var(--tw-shadow);
+}
+
+.dark .back-to-top {
+    background-color: #8094a8 !important;
+}
+
+.back-to-top::after {
+    content: ' ';
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-size: 100%;
+    background-image: url('/images/back-to-top.svg');
 }
