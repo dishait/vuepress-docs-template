@@ -15,10 +15,12 @@
     "dev:open": "vuepress dev docs --open"
   },
   "devDependencies": {
+    "@types/node": "^17.0.14",
     "@vueuse/core": "^7.5.5",
     "ityped": "^1.0.3",
     "postcss-windicss": "^1.0.0",
     "unplugin-auto-import": "^0.5.11",
+    "unplugin-vue-components": "^0.17.15",
     "vuepress": "^2.0.0-beta.35",
     "windicss": "^3.4.3"
   }
