@@ -1,5 +1,8 @@
 @windicss;
 
+
+
+
 // 解决与 windicss 的冲突
 .logo {
     display: inline-block;
@@ -8,6 +11,10 @@
 // 滚动的缓冲
 body {
     min-height: 110vh;
+}
+
+#nprogress {
+    --nprogress-color: #0288d1; // 进度条颜色
 }
 
 /*
