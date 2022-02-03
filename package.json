@@ -17,6 +17,8 @@
   "devDependencies": {
     "@vueuse/core": "^7.5.5",
     "ityped": "^1.0.3",
-    "vuepress": "^2.0.0-beta.35"
+    "postcss-windicss": "^1.0.0",
+    "vuepress": "^2.0.0-beta.35",
+    "windicss": "^3.4.3"
   }
 }

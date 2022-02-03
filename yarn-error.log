@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\18019\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add ityped -D
+  C:\Program Files\nodejs\node.exe C:\Users\18019\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add windicss -D
 
 PATH: 
   C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files\PowerShell\7\;D:\Go\bin;;D:\微信web开发者工具\dll;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\Users\18019\AppData\Local\Microsoft\WindowsApps;D:\Bandizip\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;D:\MongoDB\Server\4.4\bin;D:\Go-work-space\bin;D:\Go\bin;D:\UPUPW_ANK_W64\Modules\\MySQL\bin;C:\Users\18019\AppData\Roaming\cabal\bin;C:\tools\ghc-9.0.1\bin;C:\tools\msys64;D:\Microsoft VS Code\bin;C:\Users\18019\go\bin;C:\Program Files\MongoDB\Server\5.0\bin;C:\Program Files\Java\jdk-17.0.1\bin;;C:\Users\18019\AppData\Roaming\npm
@@ -23,11 +23,14 @@ Trace:
 
 npm manifest: 
   {
-    "name": "docs-template",
+    "name": "name",
     "version": "1.0.0",
-    "description": "vuepress 文档模板",
-    "main": "index.js",
-    "author": "markthree",
+    "description": "description",
+    "author": {
+      "name": "name",
+      "email": "xxx@qq.com",
+      "url": "https://github.com/name"
+    },
     "license": "MIT",
     "private": false,
     "scripts": {
@@ -37,6 +40,7 @@ npm manifest:
     },
     "devDependencies": {
       "@vueuse/core": "^7.5.5",
+      "ityped": "^1.0.3",
       "vuepress": "^2.0.0-beta.35"
     }
   }
@@ -1016,6 +1020,11 @@ Lockfile:
     version "2.0.0"
     resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
     integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
+  
+  ityped@^1.0.3:
+    version "1.0.3"
+    resolved "https://registry.npmjs.org/ityped/-/ityped-1.0.3.tgz#78430ab45e4836f4e565ecbacd221e58d46b44b3"
+    integrity sha512-46Qnh3qs+6EJlWDHmvWRW6qiz5jFy2mkh9UvtTvQmLJMZIjKrdz4du68le7hLX4tAWCp6QTKiq/OuLv6huHxZg==
   
   js-yaml@^3.13.1:
     version "3.14.1"
