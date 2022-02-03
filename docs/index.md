@@ -1,21 +1,21 @@
 ---
 home: true
-heroText: Name
-tagline: Slogan
+heroText: HeroText
+tagline: this is the tagline
 actions:
-  - text: 👉 Get Started
+  - text: Get Started
     link: /guide/
 features:
-  - title: 🥳 Feature
-    details: TODO
-  - title: 🥰 Feature
-    details: TODO
-  - title: 😋 Feature
-    details: TODO
-  - title: 🤔 Feature
-    details: TODO
-  - title: 🤓 Feature
-    details: TODO
-  - title: 🧐 Feature
-    details: TODO
+  - title: 🥳 feature
+    details: TODO...
+  - title: 🥰 feature
+    details: TODO...
+  - title: 😋 feature
+    details: TODO...
+  - title: 🤔 feature
+    details: TODO...
+  - title: 🤓 feature
+    details: TODO...
+  - title: 🧐 feature
+    details: TODO...
 ---

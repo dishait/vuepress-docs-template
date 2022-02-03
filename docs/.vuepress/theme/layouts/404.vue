@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { init } from 'ityped'
-import { ref, onMounted } from "vue"
-import { useRouter } from "vue-router"
 
 const content = ref<null | Element>(null)
 onMounted(() => {

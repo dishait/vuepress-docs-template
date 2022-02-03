@@ -13,6 +13,16 @@
 		"moduleResolution": "node",
 		"useDefineForClassFields": true
 	},
-	"include": ["docs/.vuepress/config.ts"],
-	"exclude": ["node_modules", "docs/.vuepress/dist"]
+	"include": [
+		"docs",
+		"components",
+		"composables",
+		"docs/.vuepress/config.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"docs/.vuepress/dist",
+		"docs/.vuepress/.temp",
+		"docs/.vuepress/.cache"
+	]
 }
