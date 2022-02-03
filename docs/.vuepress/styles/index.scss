@@ -1,6 +1,11 @@
 @windicss;
 
 
+:root {
+    --c-brand: #187391; // 主色调
+    --c-brand-light: #1d8baf; // 主色调(高亮)
+}
+
 // 解决与 windicss 的冲突
 .logo {
     display: inline-block;
@@ -13,7 +18,7 @@ body {
 
 // 进度条颜色
 #nprogress {
-    --nprogress-color: #0288d1;
+    --nprogress-color: #187391;
 }
 
 /*
