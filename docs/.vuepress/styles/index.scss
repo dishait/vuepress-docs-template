@@ -1,5 +1,39 @@
 @windicss;
 
+// 解决与 windicss 的冲突
 .logo {
     display: inline-block;
+}
+
+// 滚动的缓冲
+body {
+    min-height: 110vh;
+}
+
+/*
+* 全局滚动条
+*/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(246, 247, 248);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(233, 236, 239);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(246, 247, 248);
+}
+
+html.dark ::-webkit-scrollbar,
+html.dark ::-webkit-scrollbar-track {
+    background-color: #212529;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background-color: #343a40;
 }
