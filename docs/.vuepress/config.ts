@@ -77,8 +77,8 @@ export default defineUserConfig({
 						__dirname,
 						'./types/components.d.ts'
 					),
-					extensions: ['vue', 'md', 'tsx', 'jsx'],
-					include: [/\.md$/, /\.vue$/, /\.tsx$/, /\.jsx$/],
+					extensions: ['vue', 'md'],
+					include: [/\.md$/, /\.vue$/],
 					resolvers: [
 						NaiveUiResolver(),
 						VueUseComponentsResolver()
