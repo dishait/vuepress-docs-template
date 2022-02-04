@@ -7,6 +7,7 @@ import {
 	VueUseComponentsResolver
 } from 'unplugin-vue-components/resolvers'
 import WindiCSS from 'vite-plugin-windicss'
+import Inspect from 'vite-plugin-inspect'
 
 export default defineUserConfig({
 	lang: 'zh-CN',
@@ -53,6 +54,7 @@ export default defineUserConfig({
 	bundlerConfig: {
 		viteOptions: {
 			plugins: [
+				Inspect(),
 				WindiCSS({
 					scan: {
 						dirs: [
