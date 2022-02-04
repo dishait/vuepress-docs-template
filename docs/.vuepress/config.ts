@@ -55,14 +55,17 @@ export default defineUserConfig({
 			plugins: [
 				WindiCSS({
 					scan: {
-						dirs: ['../', '../../components'],
-						fileExtensions: [
-							'md',
-							'js',
-							'ts',
-							'vue',
-							'jsx',
-							'tsx'
+						dirs: [
+							resolve(__dirname, './'),
+							resolve(__dirname, '../'),
+							resolve(__dirname, '../../components')
+						],
+						exclude: [
+							resolve(__dirname, './dist'),
+							resolve(__dirname, './.cache'),
+							resolve(__dirname, './.temp'),
+							resolve(__dirname, './public'),
+							resolve(__dirname, './types')
 						]
 					}
 				}),
