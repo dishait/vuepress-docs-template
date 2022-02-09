@@ -37,16 +37,13 @@ export default defineUserConfig({
 	},
 	theme: resolve(__dirname, './theme/index.ts'),
 	alias: {
-		'~': resolve(__dirname, '../../')
+		'~': resolve(__dirname, './')
 	},
 	plugins: [
 		[
 			'@vuepress/register-components',
 			{
-				componentsDir: resolve(
-					__dirname,
-					'../../components'
-				)
+				componentsDir: resolve(__dirname, '../components')
 			}
 		]
 	],
@@ -59,7 +56,7 @@ export default defineUserConfig({
 						dirs: [
 							resolve(__dirname, './'),
 							resolve(__dirname, '../'),
-							resolve(__dirname, '../../components')
+							resolve(__dirname, '../components')
 						],
 						exclude: [
 							resolve(__dirname, './dist'),

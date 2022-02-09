@@ -13,7 +13,7 @@
 
 // 滚动的缓冲
 body {
-    min-height: 110vh;
+    min-height: 100vh;
 }
 
 // 进度条颜色
@@ -51,6 +51,7 @@ html.dark ::-webkit-scrollbar-thumb {
 
 
 .back-to-top {
+    @apply shadow shadow-cyan-100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,13 +61,6 @@ html.dark ::-webkit-scrollbar-thumb {
     mask: none !important;
     -webkit-mask: none !important;
     background-color: white !important;
-    --tw-shadow-color: 8, 145, 178;
-    --tw-shadow: 0 4px 6px -1px rgba(var(--tw-shadow-color), 0.1),
-        0 2px 4px -1px rgba(var(--tw-shadow-color), 0.06);
-    box-shadow: 0 0 #0000,
-        0 0 #0000,
-        0 0 #0000,
-        var(--tw-shadow);
 }
 
 .dark .back-to-top {
