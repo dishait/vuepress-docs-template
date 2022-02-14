@@ -14,8 +14,7 @@ export default defineUserConfig({
 	title: 'Hero',
 	description: '基于 vuepress 的文档模板',
 	themeConfig: {
-		logo: '/images/logo.png',
-		logoDark: '/images/loadDarked.png',
+		logo: '/images/logo.svg',
 		navbar: [
 			{
 				text: '指南',

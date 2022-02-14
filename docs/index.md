@@ -1,21 +1,25 @@
 ---
 home: true
 heroText: HeroText
-tagline: this is the tagline
+tagline: This is the Tagline
 actions:
-  - text: Get Started
+  - text: Get Started 👉
     link: /guide/
+  - text: install
+    link: /guide/
+    type: secondary
 features:
-  - title: 🥳 feature
+  - title: 🦖 First
     details: TODO...
-  - title: 🥰 feature
+  - title: 🦕 Second
     details: TODO...
-  - title: 😋 feature
+  - title: 🐸 Third
     details: TODO...
-  - title: 🤔 feature
+  - title: 🐳 Fourth
     details: TODO...
-  - title: 🤓 feature
+  - title: 🐬 Fifth
     details: TODO...
-  - title: 🧐 feature
+  - title: 🐟 Sixth
     details: TODO...
+footer: --- Thanks for VuePress 🤗 ---
 ---

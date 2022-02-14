@@ -2,18 +2,14 @@
 
 
 :root {
-    --c-brand: #187391 !important; // 主色调
-    --c-brand-light: #1d8baf !important; // 主色调(高亮)
+    --c-brand: rgb(66, 184, 131); // 主色调
+    --c-brand-light: rgb(47, 202, 133); // 主色调(高亮)
+    --c-text-lightest: #3c3c3cb3;
 }
 
 // 解决与 windicss 的冲突
 .logo {
     display: inline-block;
-}
-
-// 滚动的缓冲
-body {
-    min-height: 100vh;
 }
 
 // 进度条颜色
@@ -22,34 +18,8 @@ body {
 }
 
 /*
-* 全局滚动条
+* 回到顶部
 */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(246, 247, 248);
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: rgb(233, 236, 239);
-}
-
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background-color: rgb(246, 247, 248);
-}
-
-html.dark ::-webkit-scrollbar,
-html.dark ::-webkit-scrollbar-track {
-    background-color: #212529;
-}
-
-html.dark ::-webkit-scrollbar-thumb {
-    background-color: #343a40;
-}
-
-
 .back-to-top {
     @apply shadow shadow-cyan-100;
     display: flex;
@@ -63,10 +33,16 @@ html.dark ::-webkit-scrollbar-thumb {
     background-color: white !important;
 }
 
+/*
+* 回到顶部(暗黑模式)
+*/
 .dark .back-to-top {
     background-color: #8094a8 !important;
 }
 
+/*
+* 回到顶部内容
+*/
 .back-to-top::after {
     content: ' ';
     width: 20px;
@@ -74,4 +50,81 @@ html.dark ::-webkit-scrollbar-thumb {
     display: block;
     background-size: 100%;
     background-image: url('/images/back-to-top.svg');
+}
+
+/*
+* 全局滚动条
+*/
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(246, 247, 248);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(229, 231, 235);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/*
+* 全局滚动条(暗黑模式)
+*/
+html.dark ::-webkit-scrollbar,
+html.dark ::-webkit-scrollbar-track {
+    background-color: #212529;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background-color: #343a40;
+}
+
+/*
+* 侧边栏滚动条
+*/
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(229, 231, 235);
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+/*
+* 首页标题
+*/
+#main-title {
+    @apply text-6xl;
+}
+
+.description {
+    font-weight: 300 !important;
+    font-size: 2rem !important;
+    margin-bottom: 30px !important;
+}
+
+/*
+* 首页按钮
+*/
+.action-button {
+    font-weight: 600;
+    font-size: 16px !important;
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+    border: 0 !important;
+}
+
+.action-button.secondary {
+    color: #476582 !important;
+    background-color: #f1f1f1 !important;
+}
+
+.action-button.secondary:hover {
+    background-color: #e5e5e5 !important;
 }
