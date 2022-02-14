@@ -1,6 +1,3 @@
-@windicss;
-
-
 :root {
     --c-brand: rgb(66, 184, 131); // 主色调
     --c-brand-light: rgb(47, 202, 133); // 主色调(高亮)
@@ -18,10 +15,9 @@
 }
 
 /*
-* 回到顶部
-*/
+    * 回到顶部
+    */
 .back-to-top {
-    @apply shadow shadow-cyan-100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +27,10 @@
     mask: none !important;
     -webkit-mask: none !important;
     background-color: white !important;
+    --tw-shadow-color: 8, 145, 178;
+    --tw-shadow: 0 4px 6px -1px rgba(var(--tw-shadow-color), 0.1),
+        0 2px 4px -1px rgba(var(--tw-shadow-color), 0.06);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 0 #0000, var(--tw-shadow);
 }
 
 /*
@@ -100,7 +100,7 @@ html.dark ::-webkit-scrollbar-thumb {
 * 首页标题
 */
 #main-title {
-    @apply text-6xl;
+    font-size: 3.5rem;
 }
 
 .description {

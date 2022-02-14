@@ -42,7 +42,7 @@ export default defineUserConfig({
 		[
 			'@vuepress/register-components',
 			{
-				componentsDir: resolve(__dirname, '../components')
+				componentsDir: resolve(__dirname, './components')
 			}
 		],
 		[
@@ -63,16 +63,9 @@ export default defineUserConfig({
 				WindiCSS({
 					scan: {
 						dirs: [
-							resolve(__dirname, './'),
-							resolve(__dirname, '../'),
-							resolve(__dirname, '../components')
-						],
-						exclude: [
-							resolve(__dirname, './dist'),
-							resolve(__dirname, './.cache'),
-							resolve(__dirname, './.temp'),
-							resolve(__dirname, './public'),
-							resolve(__dirname, './types')
+							'../',
+							resolve(__dirname, './components'),
+							resolve(__dirname, './theme/layouts')
 						]
 					}
 				}),
