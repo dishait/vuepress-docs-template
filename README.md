@@ -231,7 +231,7 @@ yarn dev
 
 ## 更多 🐃
 
-由于该模板是基于 `vuepress-next` 搭建而来，所以你应该多了解她 👉 [vuepress-next](https://v2.vuepress.vuejs.org/zh/)
+由于该模板是基于 `vuepress-next` 搭建而来，如果你希望了解更多的知识，可见 👉 [vuepress-next](https://v2.vuepress.vuejs.org/zh/)
 
 
 <br />
@@ -242,9 +242,7 @@ yarn dev
 欢迎关注 **帝莎编程**
 - [官网](http://dishaxy.dishait.cn/)
 - [Gitee](https://gitee.com/dishait)
-
 - [Github](https://github.com/dishait)
-
 - [网易云课堂](https://study.163.com/provider/480000001892585/index.htm?share=2&shareId=480000001892585)
 
 <br />
