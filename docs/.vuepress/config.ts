@@ -36,7 +36,8 @@ export default defineUserConfig({
 	},
 	theme: resolve(__dirname, './theme/index.ts'),
 	alias: {
-		'~': resolve(__dirname, './')
+		'~': resolve(__dirname, '../'),
+		'~u': resolve(__dirname, './composables')
 	},
 	plugins: [
 		[
