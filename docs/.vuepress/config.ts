@@ -44,6 +44,16 @@ export default defineUserConfig({
 			{
 				componentsDir: resolve(__dirname, '../components')
 			}
+		],
+		[
+			'@vuepress/plugin-search',
+			{
+				locales: {
+					'/': {
+						placeholder: 'Search'
+					}
+				}
+			}
 		]
 	],
 	bundlerConfig: {
