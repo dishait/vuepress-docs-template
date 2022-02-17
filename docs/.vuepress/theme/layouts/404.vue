@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import 'virtual:windi-base.css'
 import { init } from 'ityped'
 
 const content = ref<null | Element>(null)
