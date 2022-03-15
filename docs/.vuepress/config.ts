@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+import Unocss from 'unocss/vite'
 import { defineUserConfig } from 'vuepress'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -6,7 +7,6 @@ import {
 	NaiveUiResolver,
 	VueUseComponentsResolver
 } from 'unplugin-vue-components/resolvers'
-import WindiCSS from 'vite-plugin-windicss'
 import Inspect from 'vite-plugin-inspect'
 
 export default defineUserConfig({
@@ -64,14 +64,8 @@ export default defineUserConfig({
 		viteOptions: {
 			plugins: [
 				Inspect(),
-				WindiCSS({
-					scan: {
-						dirs: [
-							'../',
-							resolve(__dirname, './components'),
-							resolve(__dirname, './theme/layouts')
-						]
-					}
+				Unocss({
+					mode: 'per-module'
 				}),
 				Components({
 					dirs: '',
