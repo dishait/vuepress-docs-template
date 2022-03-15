@@ -17,7 +17,7 @@
 
 1. Api 自动引入
 2. 路径别名支持
-3. windicss 支持
+3. unocss 支持
 4. 漂亮的 404 页支持
 5. 按需自动引入组件支持 (支持 `naive-ui`)
 6. Inspect 调试支持
@@ -103,9 +103,9 @@ const doubled = computed(() => count.value * 2)
 <br />
 <br />
 
-### 3. [windicss 支持](https://cn.windicss.org/)
+### 3. [unocss 支持](https://github.com/unocss/unocss)
 
-`Windi CSS ` 是一个开发中速度更快的 `原子css` 库。
+`unocss` 是一个开发中速度更快的 `原子css` 库。
 
 直接就可以在 `markdown` 中使用，例如 👇
 
@@ -118,7 +118,7 @@ const doubled = computed(() => count.value * 2)
 
 于是将渲染红色的元素 👍
 
-具体可见👉 [windicss](https://cn.windicss.org/)
+具体可见👉 [unocss](https://github.com/unocss/unocss)
 
 
 <br />
