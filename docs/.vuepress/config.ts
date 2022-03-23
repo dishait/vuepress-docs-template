@@ -29,7 +29,7 @@ export default defineUserConfig({
 			},
 			{
 				text: 'Gitee',
-				link: 'https://github.com/name/repo'
+				link: 'https://gitee.com/name/repo'
 			},
 			{
 				text: 'GitHub',
